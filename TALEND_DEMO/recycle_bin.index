@@ -2,4 +2,6 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>process/Demo</deletedFolders>
   <deletedFolders>process/External_DEMo</deletedFolders>
+  <deletedFolders>process/Standard_Demo/SourceToStaging</deletedFolders>
+  <deletedItems id="_SUWXMPEqEeuk17zZZGHN6Q" path="Standard_Demo/SourceToStaging" type="PROCESS"/>
 </recyclebin:RecycleBin>
