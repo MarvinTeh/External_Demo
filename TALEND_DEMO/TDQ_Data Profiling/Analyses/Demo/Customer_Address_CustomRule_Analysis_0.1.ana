@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_GG7v4RHSEeus79wlODPhpw" name="Customer_Address_CustomRule_Analysis" supplierDependency="_1-xkIFVqEeuBq6CpAQx77A" creationDate="2020-07-15T17:41:45.729+0800" defaultContext="Default">
-    <clientDependency href="../../../TDQ_Libraries/Rules/SQL/CustID_0.1.rules#_DxY6oJ6sEeq8BvVoyFeEWw"/>
     <clientDependency href="../../../TDQ_Libraries/Rules/SQL/Add_Phone_0.1.rules#_0_f30J6kEeq8BvVoyFeEWw"/>
-    <clientDependency href="../../../TDQ_Libraries/Rules/SQL/CardType_0.1.rules#_GHYb0BHSEeus79wlODPhpw"/>
     <clientDependency href="../../../TDQ_Libraries/Rules/SQL/Address_0.1.rules#_GHxdYBHSEeus79wlODPhpw"/>
+    <clientDependency href="../../../TDQ_Libraries/Rules/SQL/CardType_0.1.rules#_GHYb0BHSEeus79wlODPhpw"/>
+    <clientDependency href="../../../TDQ_Libraries/Rules/SQL/CustID_0.1.rules#_DxY6oJ6sEeq8BvVoyFeEWw"/>
     <taggedValue xmi:id="_GG7v4hHSEeus79wlODPhpw" tag="Status" value="development"/>
     <taggedValue xmi:id="_GG7v4xHSEeus79wlODPhpw" tag="Author" value="marvin.teh@nfr.quandatics.com"/>
     <taggedValue xmi:id="_GG7v5BHSEeus79wlODPhpw" tag="Purpose" value=""/>
@@ -17,7 +17,7 @@
       <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/Mysql_Staging_Demo_0.1.item#_YsPOcAw9EeutSdGm3mY9oQ"/>
     </context>
     <results xmi:id="_GG7v6hHSEeus79wlODPhpw">
-      <resultMetadata xmi:id="_GG7v6xHSEeus79wlODPhpw" executionDate="2021-07-30T18:50:27.572+0800" executionDuration="429" message="" executionNumber="37" lastRunOk="true" lastExecutionNumberOk="36"/>
+      <resultMetadata xmi:id="_GG7v6xHSEeus79wlODPhpw" executionDate="2021-09-21T11:56:20.415+0800" executionDuration="90" message="" executionNumber="35" lastRunOk="true" lastExecutionNumberOk="34"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_GG7v7BHSEeus79wlODPhpw" count="30" computed="true">
         <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/Mysql_Staging_Demo_0.1.item#_YsPOcAw9EeutSdGm3mY9oQ"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
@@ -26,6 +26,20 @@
           <taggedValue xmi:id="_GG7v7xHSEeus79wlODPhpw" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_GG7v8BHSEeus79wlODPhpw" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_GG7v8RHSEeus79wlODPhpw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_GG7v8hHSEeus79wlODPhpw" count="30" computed="true" userCount="30">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/Mysql_Staging_Demo_0.1.item#_YsPOcAw9EeutSdGm3mY9oQ"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Rules/SQL/CustID_0.1.rules#_s4F9wJ6iEeq8BvVoyFeEWw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_GG7v8xHSEeus79wlODPhpw" body="SELECT COUNT(*) FROM `demo_staging`.`customer_address`   WHERE (CUST_ID REGEXP '[C][0-9]{7}')" language="MySQL"/>
+        <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_GG7v9BHSEeus79wlODPhpw" name="CustID" criticalityLevel="1" whereExpression="CUST_ID REGEXP '^[A-Z][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$'">
+          <taggedValue xmi:id="_GG7v9RHSEeus79wlODPhpw" tag="Status" value="development"/>
+          <taggedValue xmi:id="_GG7v9hHSEeus79wlODPhpw" tag="Author" value="marvin.teh@nfr.quandatics.com"/>
+          <taggedValue xmi:id="_GG7v9xHSEeus79wlODPhpw" tag="Purpose" value=""/>
+          <taggedValue xmi:id="_GG7v-BHSEeus79wlODPhpw" tag="Description" value=""/>
+          <taggedValue xmi:id="_GG7v-RHSEeus79wlODPhpw" tag="Version" value="0.1"/>
+          <taggedValue xmi:id="_GG7v-hHSEeus79wlODPhpw" tag="Validation_Status" value="true"/>
+          <sqlGenericExpression xmi:id="_GG7v-xHSEeus79wlODPhpw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
       <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_GG7v_BHSEeus79wlODPhpw" count="30" computed="true" userCount="26">
@@ -68,20 +82,6 @@
           <taggedValue xmi:id="_GG7wFxHSEeus79wlODPhpw" tag="Version" value="0.1"/>
           <taggedValue xmi:id="_GG7wGBHSEeus79wlODPhpw" tag="Validation_Status" value="true"/>
           <sqlGenericExpression xmi:id="_GG7wGRHSEeus79wlODPhpw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
-        </builtInIndicatorDefinition>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_9UuOAOO0EeueEvtI3LDRyw" count="30" computed="true" userCount="30">
-        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/Mysql_Staging_Demo_0.1.item#_YsPOcAw9EeutSdGm3mY9oQ"/>
-        <indicatorDefinition href="../../../TDQ_Libraries/Rules/SQL/CustID_0.1.rules#_s4F9wJ6iEeq8BvVoyFeEWw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_-Gm98OO0EeueEvtI3LDRyw" body="SELECT COUNT(*) FROM `demo_staging`.`customer_address`   WHERE (CUST_ID REGEXP '[C][0-9]{7}')" language="MySQL"/>
-        <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_-GfCIOO0EeueEvtI3LDRyw" name="CustID" criticalityLevel="1" whereExpression="CUST_ID REGEXP '[C][0-9]{7}'">
-          <taggedValue xmi:id="_-GfCIeO0EeueEvtI3LDRyw" tag="Status" value="development"/>
-          <taggedValue xmi:id="_-GfCIuO0EeueEvtI3LDRyw" tag="Author" value="marvin.teh@nfr.quandatics.com"/>
-          <taggedValue xmi:id="_-GfCI-O0EeueEvtI3LDRyw" tag="Purpose" value=""/>
-          <taggedValue xmi:id="_-GfCJOO0EeueEvtI3LDRyw" tag="Description" value=""/>
-          <taggedValue xmi:id="_-GfCJeO0EeueEvtI3LDRyw" tag="Version" value="0.1"/>
-          <taggedValue xmi:id="_-GfCJuO0EeueEvtI3LDRyw" tag="Validation_Status" value="true"/>
-          <sqlGenericExpression xmi:id="_-GfCJ-O0EeueEvtI3LDRyw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
     </results>
