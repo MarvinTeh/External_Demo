@@ -15,32 +15,32 @@
     <module>jobs/joblets/batchcheck_0.1</module>
     <module>jobs/joblets/process_log_0.1</module>
     <module>jobs/joblets/process_log_dw_0.1</module>
-    <module>jobs/process/ETL_DEMo/ControlTable/batch_control_0.1</module>
-    <module>jobs/process/ETL_DEMo/ControlTable/clearstewardship_0.1</module>
-    <module>jobs/process/ETL_DEMo/ControlTable/process_control_0.1</module>
-    <module>jobs/process/ETL_DEMo/DataCatalog/datacatalog_0.1</module>
-    <module>jobs/process/ETL_DEMo/DataPreparation/datapreparation_0.1</module>
-    <module>jobs/process/ETL_DEMo/FromStewardship/retrieveagentcode_0.1</module>
-    <module>jobs/process/ETL_DEMo/FromStewardship/retrievebranchcode_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/agent_code_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/branch_code_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/city_code_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/country_code_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/currency_code_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/customer_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/customer_address_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/customer_contact_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/customer_demographic_0.1</module>
-    <module>jobs/process/ETL_DEMo/Population/server_branch_code_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/agentcode_ingestion_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/batch_lookup_master_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/branchcode_ingestion_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/branchcodeoutputtofile_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/citycode_ingestion_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/countrycode_ingestion_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/currencycode_ingestion_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/s_agentcode_ingestion_0.1</module>
-    <module>jobs/process/ETL_DEMo/SourceToStaging/server_branchcode_ingestion_0.1</module>
+    <module>jobs/process/Standard_Demo/ControlTable/batch_control_0.1</module>
+    <module>jobs/process/Standard_Demo/ControlTable/clearstewardship_0.1</module>
+    <module>jobs/process/Standard_Demo/ControlTable/process_control_0.1</module>
+    <module>jobs/process/Standard_Demo/DataCatalog/datacatalog_0.1</module>
+    <module>jobs/process/Standard_Demo/DataPreparation/datapreparation_0.1</module>
+    <module>jobs/process/Standard_Demo/FromStewardship/retrieveagentcode_0.1</module>
+    <module>jobs/process/Standard_Demo/FromStewardship/retrievebranchcode_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/agent_code_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/branch_code_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/city_code_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/country_code_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/currency_code_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/customer_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/customer_address_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/customer_contact_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/customer_demographic_0.1</module>
+    <module>jobs/process/Standard_Demo/Population/server_branch_code_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/agentcode_ingestion_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/batch_lookup_master_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/branchcode_ingestion_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/branchcodeoutputtofile_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/citycode_ingestion_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/countrycode_ingestion_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/currencycode_ingestion_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/s_agentcode_ingestion_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/server_branchcode_ingestion_0.1</module>
     <module>jobs/process/Standard_Demo/drawingboard_0.1</module>
     <module>jobs/process/Standard_Demo/master_job_0.1</module>
     <module>jobs/process/Standard_Demo/masteringestion_0.1</module>
