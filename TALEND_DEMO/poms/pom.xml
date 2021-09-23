@@ -41,7 +41,7 @@
     <module>jobs/process/ETL_DEMo/SourceToStaging/currencycode_ingestion_0.1</module>
     <module>jobs/process/ETL_DEMo/SourceToStaging/s_agentcode_ingestion_0.1</module>
     <module>jobs/process/ETL_DEMo/SourceToStaging/server_branchcode_ingestion_0.1</module>
-    <module>jobs/process/External_DEMo/SourceToStaging/data_filtering_0.1</module>
+    <module>jobs/process/Standard_Demo/SourceToStaging/data_filtering_0.1</module>
     <module>jobs/process/Standard_Demo/drawingboard_0.1</module>
     <module>jobs/process/Standard_Demo/master_job_0.1</module>
     <module>jobs/process/Standard_Demo/masteringestion_0.1</module>
